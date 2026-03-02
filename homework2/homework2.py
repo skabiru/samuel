@@ -66,4 +66,4 @@ on the other hand git bash is a terminal like interface that allows users to run
 
 # 19) Print your favorite math expression you've learned in Python so far. 
 # (Hint: Use print() and add a comment explaining what it does.)
-print(5%2) # get the remainder after divind the first number by the second.
+print(5%2) # get the remainder after divind the first number by the second.+++
