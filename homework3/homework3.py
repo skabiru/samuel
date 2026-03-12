@@ -40,10 +40,13 @@ def fuel_efficiency(miles, gallons):
 # --- Secret Code ---
 def encrypt_data(number):
     # get the last number and the numbers before the last number
+    if len(str(number)) < 2: # this is cause if its just one number we dont need to change anything
+        return number
     last_number = number % 10
     numbers_before = number // 10
+    factor = len(str(numbers_before))
     # move the last to first then add the rest of the numbers behind it
-    encrypted = (last_number * (10 * len(str(numbers_before)))) + numbers_before # in the example this would make 50000 + 1234
+    encrypted = last_number * (10 ** factor) + numbers_before # in the example this would make 50000 + 1234
     return encrypted
 
 # --- Loops ---
